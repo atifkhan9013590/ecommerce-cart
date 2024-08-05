@@ -22,7 +22,9 @@ const totalPages = Math.ceil(totalItems / itemsPerPage);
   return (
     <>
       <div className="pagination">
-        <div onClick={handlePrevious}>&lt;</div>
+        <div className="pre" onClick={handlePrevious}>
+          &lt;
+        </div>
         {Array.from({ length: totalPages }, (_, index) => (
           <div
             key={index + 1}
@@ -32,7 +34,9 @@ const totalPages = Math.ceil(totalItems / itemsPerPage);
             {index + 1}
           </div>
         ))}
-        <div onClick={handleNext}>&gt;</div>
+        <div className="pre" onClick={handleNext}>
+          &gt;
+        </div>
       </div>
       <div className="shows">
         You're viewing {firstIndex}-{lastIndex} of {totalItems}

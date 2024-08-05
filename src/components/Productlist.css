@@ -2,19 +2,24 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
-    padding: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
     box-sizing: border-box; /* Ensure padding is included in the element's total width */
 }
 .header-search{
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .header-search select ,input{
     height: 30px;
+    width: 200px;
     border: 0.2px solid lightgray;
     font-family: 'Times New Roman', Times, serif;
     padding-left: 5px;
@@ -27,8 +32,8 @@
 .main-prd-lst{
     display: flex;
     flex-direction: column;
+    padding: 5px;
     box-sizing: border-box;
-    padding: 20px;
 }
 
 .product-card {
@@ -82,11 +87,15 @@ font-family: 'Times New Roman', Times, serif;
     background-color: lightgray;
     border-radius: 5px;
 }
+.pre{
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
 .pagination{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 @media (max-width: 768px) {
@@ -96,6 +105,25 @@ font-family: 'Times New Roman', Times, serif;
     .all{
         display: none;
     }
+    .header-search{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header-search select ,input{
+    height: 30px;
+    width: 150px;
+    border: 0.2px solid lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5px;
+
+}
 }
 .product-card p{
     font-family: 'Times New Roman', Times, serif;

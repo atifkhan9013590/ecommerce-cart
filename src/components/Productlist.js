@@ -52,7 +52,7 @@ function Productlist() {
       <div className="header-search">
         <input
           type="text"
-          placeholder="Search products by category"
+          placeholder="Search by category"
           value={searchQuery}
           onChange={handleSearchChange}
         />
