@@ -15,11 +15,11 @@ function Header() {
   return (
     <div className="header">
       <div onClick={()=>handleNavigation('/')}>
-        <img src={fashion} className='logo' />
+        <img src={fashion} className='logo' alt='logo' />
       </div>
 
       <div  onClick={()=>handleNavigation('/cart')}>
-        <img src={cart} className="cart-img-icon" />
+        <img src={cart} className="cart-img-icon" alt='cart' />
        {state.carts.length >0 && <div className='cart-length'>{state.carts.length}</div>}
       </div>
     </div>
