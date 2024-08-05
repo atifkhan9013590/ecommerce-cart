@@ -1,0 +1,113 @@
+.product-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+}
+.header-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-search select ,input{
+    height: 30px;
+    border: 0.2px solid lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5px;
+
+}
+.all{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.main-prd-lst{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.price{
+     font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 14px;
+   color: rgb(69, 64, 66);
+}
+.product-card p {
+    margin: 5px 0; /* Adjust the margin to control spacing between p tags */
+}
+.shows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(37, 32, 32);
+}
+.buttons{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.active{
+font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.prd-images-main {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all{
+        display: none;
+    }
+}
+.product-card p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.product-card button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: 0.2px solid lightgray
+}
