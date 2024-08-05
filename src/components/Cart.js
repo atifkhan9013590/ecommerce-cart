@@ -108,7 +108,7 @@ function Cart() {
       ) : (
         <div className="empty-cart">
           <div>YOUR CART IS EMPTY</div>
-          <img src={empty} className="empty-bag" />
+          <img src={empty} className="empty-bag"  alt="bag"/>
         </div>
       )}
     </div>
